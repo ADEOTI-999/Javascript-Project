@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="3pages.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">Adeoti</a>
+
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about-us.html">About Us</a>
+      </nav>
+    </header>
+    <br /><br />
+    <section class="intro">
+      <h2>Adeoti luxury motors</h2>
+    </section>
+    <div class="glass">
+      <div class="review">
+        <img src="placeholder.jpeg" alt="customer" />
+        <h5>Daniel Brooks</h5>
+        <p>
+          “From browsing to purchasing, everything went smoothly. The team
+          answered all my questions and helped me find the perfect car.”
+        </p>
+      </div>
+      <div class="review">
+        <img src="placeholder.jpeg" alt="customer" />
+        <h5>James Carter</h5>
+        <p>
+          “Excellent service and a great selection of cars. The staff were
+          professional and made the entire buying process easy.”
+        </p>
+      </div>
+      <div class="review">
+        <img src="placeholder.jpeg" alt="customer" />
+        <h5>Edgar Mitchell</h5>
+        <p>
+          “I had a wonderful experience! The car was in excellent condition, and
+          the team was helpful and transparent throughout the process.”
+        </p>
+      </div>
+      <div class="review">
+        <img src="placeholder.jpeg" alt="customer" />
+        <h5>Micheal Johnson</h5>
+        <p>
+          “Great prices, reliable vehicles, and outstanding customer service. I
+          would definitely recommend this company to anyone looking for a
+          quality car.”
+        </p>
+      </div>
+    </div>
+    <br />
+    <footer>
+      <div class="footer-body">
+        <div>Adeoti automobiles</div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing tium ab officiis
+            hic.
+          </p>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        &copy; <a href="portfolio.html">Adeoti</a>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    const carousel = document.querySelector(".glass");
+    setInterval(() => {
+      const end =
+        carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 1;
+      if (end) {
+        carousel.scrollTo({ left: 0, behavior: "instant" });
+      } else {
+        carousel.scrollBy({ left: carousel.clientWidth, behavior: "smooth" });
+      }
+    }, 3000);
+  </script>
+</html>
